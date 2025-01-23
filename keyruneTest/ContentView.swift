@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    var unicodeValue = "&#xe665;"
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text(unicodeValue)
+                .font(Font.custom("keyrune", size: 30))
+            Text("&#xe665;")
+                .font(Font.custom("keyrune", size: 30))
         }
         .padding()
     }
